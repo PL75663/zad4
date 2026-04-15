@@ -1,0 +1,23 @@
+{
+  "skills": [
+    "HTML5 / CSS3 (Flexbox, Grid)",
+    "JavaScript (ES6+, DOM)",
+    "Git / GitHub",
+    "Podstawy JSON i Fetch API",
+    "Praca z Local Storage"
+  ],
+  "projects": [
+    {
+      "name": "Kalkulator Wydatków",
+      "description": "Aplikacja do śledzenia budżetu w JS."
+    },
+    {
+      "name": "Strona dla kawiarni",
+      "description": "Responsywne menu i formularz rezerwacji."
+    },
+    {
+      "name": "Gra \"Kółko i krzyżyk\"",
+      "description": "Logika klasycznej gry napisana w JavaScript."
+    }
+  ]
+}
