@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje CV - Artem Harbar (75663) - Backend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-green">
+
+    <header>
+        <div class="container">
+            <h1>Artem Harbar</h1>
+            <p class="subtitle">Młodszy Front-end Developer / Student Vistula (Indeks: 75663)</p>
+            <div class="controls">
+                <button id="theme-toggle">Zmień motyw (Zielony/Czerwony)</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contact">
+            <h2>Kontakt i Backend</h2>
+            <p>Wyślij wiadomość, aby przetestować komunikację z serwerem (metoda POST).</p>
+            
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="firstName">Imię:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Wpisz imię">
+                    <span class="error-msg" id="error-firstName"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nazwisko:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Wpisz nazwisko">
+                    <span class="error-msg" id="error-lastName"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Wpisz e-mail">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Twoja wiadomość..."></textarea>
+                    <span class="error-msg" id="error-message"></span>
+                </div>
+                
+                <button type="submit" id="submit-btn">Wyślij na serwer</button>
+                
+                <div id="form-loading" style="display: none; margin-top: 10px;">Wysyłanie danych...</div>
+                <div id="form-success" class="success-msg" style="display: none;">Sukces! Dane zostały zapisane na serwerze.</div>
+                <div id="form-error" class="error-msg" style="display: none; color: red;">Błąd podczas wysyłania danych.</div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Artem Harbar. Student Vistula (Indeks: 75663).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
